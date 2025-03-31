@@ -55,9 +55,62 @@ console.log(--numero3);
 
 let num1 = 2, num2 = 5, num3 = 3;
 let num4 = "2";
+
+let y = null;
+let yy = "null";
 //Operadores relacionais
 console.log(num1 > num2);
 console.log(num1 < num2);
 console.log(num1 == num4);
+//compara se os valores são igual e apenas os valores 
+console.log(num1!=num4);
+//verificar se os valores são completamente diferentes 2 != "2"
 console.log(num1 === num4);
+//comparar se os valores são igual e tambémm os tipos dos dados
 console.log(num1 !== num4);
+//comparar os valores e tbm os tipos de dados 2 != "2"
+console.log("testando os nulls da Mari");
+console.log(y!=yy);
+
+//OPERADORES LÓGICOS
+/*
+&& - condição 1 E condição 2 (são verdadeiras) = duas condições verdadeira
+|| - condição 1 OU condição 2 (são verdadeiras) = Quando as duas ou uma delas for verdadeira
+*/
+
+// Estrutura de decisão
+/*
+if(condição){...}
+let num1 = 2, num2 = 5, num3 = 3;
+let num4 = "2";
+*/
+if(num1 < num2){
+    console.log("caiu aqui no if, deu bom!");
+}
+
+if(num1 < num2 && num1 > num3){
+    console.log("deu certo no if com duas condições");
+}
+
+if(num1 < num2 || num1 > num3){
+    console.log("deu certo no if com duas condições");
+}
+/*
+  condição 1  ^ condição 2 => apenas uma das condições for verdadeira
+^ num1 < num2 ^ num1 > num3
+se apenas a condição 1 for verdadeira ouuuu apenas a condição 2 for verdadeira
+let num1 = 2, num2 = 5, num3 = 3;
+let num4 = "2";
+*/
+
+if(num1 < num2 ^ num1 > num3){
+    console.log("deu certo no if com duas condições ou ^");
+}
+if(num1 < num2 ^ num1 < num3){
+    console.log("vamos ver se o ou exclusivo sai agora");
+}
+if(num1 > num2 ^ num1 > num3){
+    console.log("vamos ver se o ou exclusivo sai agora denovo");
+}
+
+console.log(!true);
