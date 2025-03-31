@@ -114,3 +114,158 @@ if(num1 > num2 ^ num1 > num3){
 }
 
 console.log(!true);
+/*
+let num1 = 2, num2 = 5, num3 = 3;
+let num4 = "2";
+*/
+if(num1> num2){
+    console.log("saída do if");
+}else{
+    console.log("saída do else");
+}
+
+// EStrutura de decisão - Swhitch case
+
+let opcao = 2;
+
+switch(opcao){
+    case 1:
+        console.log("Opção 1 selecionada");
+        break;
+
+    case 2:
+        console.log("Opção 2 selecionada");
+        break;
+    default:
+        console.log("Escolha uma opção válida");
+        
+}
+
+//if ternario
+/*
+condição ? resultado verdadeiro : resultado do falso;
+*/
+let idade = 15
+console.log(
+    idade>18? 
+    "Bem vinda(o) ao sistema": 
+    "Você não tem idade para acessar, chame sua mãe");
+
+    console.log(
+        idade>=15? 
+        "Agora você pode ver o site": 
+        "Continua com acesso restrito");
+
+//Estrutura de repetição
+/*
+for(valor inicial; condição final; incremento){...}
+*/
+
+let contador = 0;
+for(contador; contador < 4; contador ++){
+    console.log("o contador agora vale: " + contador);
+}
+
+/*
+While(condição){
+
+}
+*/
+let condicao1 = 10;
+while(condicao1 > 5){
+    console.log("Condição do while esta ok, valor é: " + condicao1);
+    condicao1 --;
+}
+
+/*
+do{
+....
+}while(condição)
+*/
+
+let condicao2 = 3;
+
+do{
+    console.log("valor da condição 2 é: " + condicao2);
+
+}while(condicao2 >= 10);
+ //    condição falsa
+
+ do{
+    console.log("valor da condição 2 é: " + condicao2);
+condicao2 ++;
+}while(condicao2 <= 10);
+ //    condição falsa
+
+ //FUNÇOES
+ 
+ /*
+ function nome(argumentos){
+    código
+ }
+ */
+
+ function digaOla(nome){
+    console.log("Ola diva " + nome);
+
+ }
+
+ digaOla("Gaby");
+ digaOla("Daniele");
+
+ function horaDoLanche(tipoLanche){
+    return "O lanche hoje será: " + tipoLanche;
+ }
+
+ console.log(horaDoLanche("Batata"));
+ 
+function n2 (n){
+    console.log(n + 2)
+}
+ // ()=>
+
+//criou uma constante    
+const exibir = n => console.log(n + 2);
+ //           argumentos 
+
+ exibir(15);
+ exibir(22);
+                //array
+ let numeros = [1,2,3,4,5,6,7,8,9];
+             //[0,1,2,3,4,5,6,7,8]
+
+//exibir uma posição do array
+console.log(numeros[5]);
+
+//
+numeros.forEach(numero => {
+    console.log(numero);
+});
+
+//tratamento de exceções
+/*
+try {
+    codigo que vamos tentar executar
+}catch(error){
+nossa exceção
+}
+*/
+
+try {
+    
+    // Tenta converter um número em letras maiúsculas
+    const resultado = converte("123");
+
+    console.log(resultado);
+
+} catch (error) {
+    // Captura o erro e informa ao usuário
+    console.error("Não é possível converter para letras maiúsculas!");
+}finally{
+    console.log("Eu sempre estarei aqui")
+}
+
+// Função para formatar uma string com todas as letras maiúsculas
+function converte(conteudo){
+    return conteudo.toUpperCase();
+}
