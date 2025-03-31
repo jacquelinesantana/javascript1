@@ -43,8 +43,9 @@ console.log("Os valores subtraidos resulta em: " + (numero1 - numero2));
 
 let variavel1 = "primeiro texto", variavel2 = "opaaa sou eu aqui";
 console.log(`Agora vamos printar a primeira var ${variavel1} 
-    \n Agora a segunda var ${variavel2}`);
+    \n Agora a segunda var ${variavel2}`);//interpolar texto e variáveis
 console.log("Agora vamos printar a primeira var ${variavel1} \n Agora a segunda var ${variavel2}");
+//com aspas teste ele printa a variavel e não o conteúdo da variável
 
 let numero3 = 0;
 numero3++
